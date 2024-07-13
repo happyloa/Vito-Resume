@@ -19,3 +19,23 @@
   font-size: 24px;
   line-height: 36px;
 }
+
+.experienceArticle span {
+  color: #949494;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 30px;
+}
+
+/* 工具樣式 */
+.mb8 {
+  margin-bottom: 8px !important;
+}
+
+.mb12 {
+  margin-bottom: 12px !important;
+}
+
+.mb16 {
+  margin-bottom: 16px !important;
+}

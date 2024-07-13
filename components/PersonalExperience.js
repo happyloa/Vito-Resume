@@ -9,29 +9,42 @@ export default function PersonalExperience() {
       <div className={styles.innerWrapper}>
         <article className={styles.experienceArticle}>
           <HeadingWithLine Heading="Vito Evans" />
-          <p>456 Walnut Avenue, Someville, USA</p>
-          <p>+1 123 456 7890</p>
-          <p>info@hexschool.com</p>
-          <p>www.infohexschool.com</p>
+          <p className={styles.mb8}>456 Walnut Avenue, Someville, USA</p>
+          <p className={styles.mb8}>+1 123 456 7890</p>
+          <p className={styles.mb8}>info@hexschool.com</p>
+          <p className={styles.mb8}>www.infohexschool.com</p>
         </article>
         <article className={styles.experienceArticle}>
           <HeadingWithLine Heading="Education" />
-          <p>456 Walnut Avenue, Someville, USA</p>
-          <p>+1 123 456 7890</p>
-          <p>info@hexschool.com</p>
-          <p>www.infohexschool.com</p>
+          <span>2014-2018</span>
+          <p className={styles.mb16}>
+            Bachelor of Science in Business Administration, University of
+            California, Los Angeles
+          </p>
+          <span>2012-2014</span>
+          <p className={styles.mb16}>
+            Associate of Arts in Graphic Design, San Francisco State University
+          </p>
+          <span>2008-2012</span>
+          <p>High School Diploma, Lincoln High School</p>
         </article>
         <article className={styles.experienceArticle}>
           <HeadingWithLine Heading="Work" />
-          <p>456 Walnut Avenue, Someville, USA</p>
-          <p>+1 123 456 7890</p>
-          <p>info@hexschool.com</p>
-          <p>www.infohexschool.com</p>
+          <span>2018-2021</span>
+          <p className={styles.mb16}>Marketing Manager, ABC Company</p>
+          <span>2016-2018</span>
+          <p className={styles.mb16}>Sales Associate, XYZ Corporation</p>
+          <span>2014-2016</span>
+          <p>Customer Service Representative, QRS Inc.</p>
         </article>
         <article className={styles.experienceArticle}>
           <HeadingWithLine Heading="Awards" />
-          <p>Best in Show Award, National Advertising Awards, 2020</p>
-          <p>Honorable Mention, International Design Competition, 2019</p>
+          <p className={styles.mb12}>
+            Best in Show Award, National Advertising Awards, 2020
+          </p>
+          <p className={styles.mb12}>
+            Honorable Mention, International Design Competition, 2019
+          </p>
           <p>People's Choice Award, Local Art Exhibition, 2018</p>
         </article>
       </div>
