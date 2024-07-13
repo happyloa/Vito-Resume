@@ -1,5 +1,5 @@
 .container {
-  padding: 160px 0 0;
+  padding: 160px 24px 0;
 }
 
 .innerWrapper {
@@ -28,4 +28,36 @@
   font-size: 128px;
   line-height: 192px;
   letter-spacing: 0.12em;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 80px 24px 0;
+  }
+
+  .name {
+    font-size: 72px;
+    line-height: 128px;
+  }
+
+  .heading {
+    font-size: 72px;
+    line-height: 128px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 60px 24px 0;
+  }
+
+  .name {
+    font-size: 56px;
+    line-height: 92px;
+  }
+
+  .heading {
+    font-size: 56px;
+    line-height: 92px;
+  }
 }
