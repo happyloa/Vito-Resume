@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./variables.css";
 
 import Footer from "@/components/Footer";
 
