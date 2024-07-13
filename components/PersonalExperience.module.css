@@ -1,0 +1,8 @@
+.container {
+  padding: 80px 0 160px;
+}
+
+.innerWrapper {
+  max-width: 1272px;
+  margin: 0 auto;
+}
