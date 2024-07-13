@@ -1,12 +1,31 @@
 .container {
-  padding: 160px 312px;
+  padding: 160px 0 0;
+}
+
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1272px;
+  margin: 0 auto;
 }
 
 .name {
+  color: #000000;
+  font-size: 128px;
+  line-height: 192px;
+  letter-spacing: 0.12em;
 }
 
 .avatar {
+  align-self: center;
+  max-width: 636px;
+  width: 100%;
 }
 
 .heading {
+  align-self: flex-end;
+  color: #000000;
+  font-size: 128px;
+  line-height: 192px;
+  letter-spacing: 0.12em;
 }
