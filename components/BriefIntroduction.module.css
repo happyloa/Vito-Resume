@@ -1,5 +1,5 @@
 .container {
-  background-color: #efefef;
+  background-color: var(--grey);
   padding: 48px 24px;
 }
 
@@ -13,14 +13,14 @@
 .intro {
   width: 636px;
   color: #000000;
-  font-size: 32px;
+  font-size: var(--l);
   line-height: 48px;
 }
 
 @media (max-width: 576px) {
   .intro {
     color: #000000;
-    font-size: 24px;
+    font-size: var(--m);
     text-align: center;
     line-height: 36px;
   }

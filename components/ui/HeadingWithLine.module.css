@@ -1,7 +1,7 @@
 .experienceHeading {
-  border-bottom: solid 3px #ae0000;
-  color: #ae0000;
-  font-size: 40px;
+  border-bottom: solid 3px var(--primary);
+  color: var(--primary);
+  font-size: var(--h2);
   line-height: 60px;
   margin-bottom: 16px;
 }

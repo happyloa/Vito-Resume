@@ -16,13 +16,13 @@
 
 .experienceArticle p {
   color: #000000;
-  font-size: 24px;
+  font-size: var(--m);
   line-height: 36px;
 }
 
 .experienceArticle span {
-  color: #949494;
-  font-size: 20px;
+  color: var(--secondary);
+  font-size: var(--s);
   font-style: italic;
   line-height: 30px;
 }
