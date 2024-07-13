@@ -1,0 +1,11 @@
+:root {
+  /* 顏色 */
+  --primary: #ae0000;
+  --secondary: #949494;
+  --grey: #efefef;
+  /* 文字大小 */
+  --h2: 40px;
+  --l: 32px;
+  --m: 24px;
+  --s: 20px;
+}
