@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+
 * {
   box-sizing: border-box;
+  font-family: "Castoro", serif;
   padding: 0;
   margin: 0;
 }
