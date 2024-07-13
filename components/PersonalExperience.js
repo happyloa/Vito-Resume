@@ -1,4 +1,4 @@
-import styles from "./PersonalExperience.css";
+import styles from "./PersonalExperience.module.css";
 
 export default function PersonalExperience() {
   return (
