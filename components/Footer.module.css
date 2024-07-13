@@ -1,0 +1,15 @@
+.footer {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 64px 0;
+}
+
+.footer img {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer img:hover {
+  transform: scale(1.1);
+}
