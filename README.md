@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+![](https://i.imgur.com/Xca9mSf.png)
 
-First, run the development server:
+# 六角學院 2023 切版夏季班 W1 - 個人履歷
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+此專案為六角學院 2023 切版夏季班 W1 - 個人履歷之成品
+
+- [線上部署連結](https://vito-resume-six.vercel.app/)
+- [設計稿](https://www.figma.com/design/eB5X8OYO4whPx3btCZdr3w/2023-%E5%88%87%E7%89%88%E5%A4%8F%E5%AD%A3%E7%8F%AD-W1---%E5%80%8B%E4%BA%BA%E5%B1%A5%E6%AD%B7?node-id=0-1&t=4bpBBLS1e1JmEtYD-0)
+
+## 使用技術
+
+[Next.js 14](https://nextjs.org/)（React 加強版）
+
+## 開發環境設置
+
+建議使用 [VSCode](https://code.visualstudio.com/) 搭配 [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+## 快速開始
+
+**專案設置（Project setup）**
+
+將專案複製到本地端
+
+```sh
+$ git clone https://github.com/happyloa/Vito-Resume.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+套件安裝
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+$ cd Vito-Resume
+$ npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**執行專案（Start the server）**
 
-## Learn More
+```sh
+$ npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+在瀏覽器上輸入
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+http://localhost:3000/
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+即可在本地端預覽專案
 
-## Deploy on Vercel
+## 頁面路徑（Router Link）
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+位於 `app`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+結構說明
+
+```
+app
+├── favicon.ico                          網站圖示
+├── global.css                           全域樣式
+├── variables.css                        樣式變數
+├── layout.js                            網站整體架構，頁尾在這被引入並使用
+└── page.js                              首頁（/）
+```
+
+## 元件檔案（Components）
+
+位於 `components`
+
+結構說明
+
+```
+components
+└── Hero.js                              最上方的區域，包含個人照、標題
+├── Hero.module.css                      最上方的區域的樣式
+├── BriefIntroduction.js                 個人簡介
+├── BriefIntroduction.module.css         個人簡介的樣式
+├── PersonalExperience.js                個人經履歷
+├── PersonalExperience.module.css        個人經履歷的樣式
+├── Footer.js                            網站頁尾
+├── Footer.css                           網站頁尾的樣式
+└── ui                                   頁面 ui 元件庫
+```
+
+## 靜態檔案
+
+位於 `public/image`
+
+結構說明
+
+```
+public
+└── image
+    ├── fb.webp                          Facebook 圖示
+    ├── instagram.webp                   Instagram 圖示
+    ├── line.webp                        Line 圖示
+    └── vito.webp                        個人照片
+```
+
+## 使用的工具
+
+- [TinyPNG](https://tinypng.com/)
+- [ChatGPT 4o](https://openai.com/)
