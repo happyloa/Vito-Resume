@@ -9,13 +9,6 @@
   margin: 0 auto;
 }
 
-.name {
-  color: #000000;
-  font-size: 128px;
-  line-height: 192px;
-  letter-spacing: 0.12em;
-}
-
 .avatar {
   align-self: center;
   max-width: 636px;
@@ -23,21 +16,19 @@
 }
 
 .heading {
-  align-self: flex-end;
   color: #000000;
   font-size: 128px;
   line-height: 192px;
   letter-spacing: 0.12em;
 }
 
+.end {
+  align-self: flex-end;
+}
+
 @media (max-width: 992px) {
   .container {
     padding: 80px 24px 0;
-  }
-
-  .name {
-    font-size: 72px;
-    line-height: 128px;
   }
 
   .heading {
@@ -49,11 +40,6 @@
 @media (max-width: 576px) {
   .container {
     padding: 60px 24px 0;
-  }
-
-  .name {
-    font-size: 56px;
-    line-height: 92px;
   }
 
   .heading {
