@@ -1,9 +1,38 @@
+"use client";
+
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./PersonalExperience.module.css";
 
 // 引入帶有裝飾線的標題展示性元件
 import HeadingWithLine from "./ui/HeadingWIthLine";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function PersonalExperience() {
+  useEffect(() => {
+    // 對每個 experienceArticle 元素應用 fromTo 動畫
+    gsap.utils.toArray(`.${styles.experienceArticle}`).forEach((article) => {
+      gsap.fromTo(
+        article,
+        { x: -100, opacity: 0 }, // 初始狀態：左移 100px，透明度 0
+        {
+          x: 0, // 結束狀態：回到原始位置
+          opacity: 1, // 結束狀態：完全可見
+          duration: 2, // 動畫持續時間為 2 秒
+          ease: "power3.out", // 使用平滑的動畫過渡效果
+          scrollTrigger: {
+            trigger: article, // 觸發動畫的元素
+            start: "top 65%", // 當元素進入視窗 65% 處時觸發動畫
+            onEnter: () => gsap.to(article, { x: 0, opacity: 1 }), // 向下滾動進入時淡入並回到原位置
+            onLeaveBack: () => gsap.to(article, { x: -100, opacity: 0 }), // 向上滾動離開時淡出並左移
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <section className={styles.container}>
       <div className={styles.innerWrapper}>
