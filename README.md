@@ -96,7 +96,7 @@ public
     └── vito.webp                        個人照片
 ```
 
-## 使用的工具
-
+## 使用的套件&工具
+- [GSAP](https://gsap.com/)
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4o](https://openai.com/)
