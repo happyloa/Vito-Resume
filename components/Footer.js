@@ -1,23 +1,17 @@
 "use client";
 
-import { useLayoutEffect } from "react";
-import { gsap } from "gsap";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  useLayoutEffect(() => {
-    gsap.utils.toArray(`.${styles.footer} img`).forEach((img) => {
-      img.addEventListener("mouseenter", () => {
-        gsap.to(img, { y: -10, duration: 0.3, ease: "bounce.out" });
-      });
-      img.addEventListener("mouseleave", () => {
-        gsap.to(img, { y: 0, duration: 0.3, ease: "bounce.out" });
-      });
-    });
+  useEffect(() => {
+    AOS.init({ once: true });
   }, []);
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} data-aos="fade-up" data-aos-offset="150">
       <a href="#" target="_blank">
         <img src="image/fb.webp" alt="Facebook profile" />
       </a>
