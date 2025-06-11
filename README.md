@@ -97,6 +97,6 @@ public
 ```
 
 ## 使用的套件&工具
-- [GSAP](https://gsap.com/)
+- [GSAP](https://gsap.com/) *(改用 `useLayoutEffect` 以提升動畫流暢度)*
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4o](https://openai.com/)

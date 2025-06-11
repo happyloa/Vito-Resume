@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./PersonalExperience.module.css";
@@ -11,7 +11,7 @@ import HeadingWithLine from "./ui/HeadingWIthLine";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function PersonalExperience() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     // 對每個 experienceArticle 元素應用 fromTo 動畫
     gsap.utils.toArray(`.${styles.experienceArticle}`).forEach((article) => {
       gsap.fromTo(

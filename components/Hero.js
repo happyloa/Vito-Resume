@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -10,7 +10,7 @@ import styles from "./Hero.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     // VITO 標題動畫
     gsap.fromTo(
       `.${styles.heading}:first-of-type`, // 選取第一個 heading，即 VITO

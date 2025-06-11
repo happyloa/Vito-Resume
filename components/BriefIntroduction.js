@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -10,7 +10,7 @@ import styles from "./BriefIntroduction.module.css";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function BriefIntroduction() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     // 設定動畫，向下滾動時淡入，向上滾動時淡出
     gsap.fromTo(
       `.${styles.intro}`,

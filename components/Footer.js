@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.utils.toArray(`.${styles.footer} img`).forEach((img) => {
       img.addEventListener("mouseenter", () => {
         gsap.to(img, { y: -10, duration: 0.3, ease: "bounce.out" });
