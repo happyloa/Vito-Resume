@@ -5,7 +5,7 @@
 
 此專案為六角學院 2023 切版夏季班 W1 - 個人履歷之成品
 
-- [線上部署連結](https://vito-resume-six.vercel.app/)
+- [線上部署連結](https://vito-resume.pages.dev/)
 - [設計稿](https://www.figma.com/design/eB5X8OYO4whPx3btCZdr3w/2023-%E5%88%87%E7%89%88%E5%A4%8F%E5%AD%A3%E7%8F%AD-W1---%E5%80%8B%E4%BA%BA%E5%B1%A5%E6%AD%B7?node-id=0-1&t=4bpBBLS1e1JmEtYD-0)
 
 ## 使用技術
