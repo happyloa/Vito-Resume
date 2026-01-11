@@ -1,15 +1,26 @@
+/**
+ * 頁尾樣式 (Footer Styles)
+ *
+ * 定義網站頁尾區域的樣式，包含：
+ * - 黑色背景
+ * - 社群媒體圖示的排列與互動效果
+ */
+
+/* 頁尾容器 */
 .footer {
-  background-color: #000000;
+  background-color: #000000; /* 黑色背景 */
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: center; /* 水平置中 */
+  gap: 40px; /* 圖示間距 */
   padding: 64px 0;
 }
 
+/* 社群圖示 - 過渡動畫設定 */
 .footer img {
   transition: all 0.3s ease-in-out;
 }
 
+/* 社群圖示 - hover 效果：放大 1.1 倍 */
 .footer img:hover {
   transform: scale(1.1);
 }

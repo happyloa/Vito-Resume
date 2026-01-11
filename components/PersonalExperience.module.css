@@ -1,7 +1,16 @@
+/**
+ * 個人經歷區塊樣式 (Personal Experience Styles)
+ *
+ * 定義學歷、工作經驗、獲獎紀錄等經歷區塊的排版。
+ * 包含各種間距工具類別。
+ */
+
+/* 區塊容器 */
 .container {
   padding: 80px 24px 160px;
 }
 
+/* 內層包裝器 - 垂直排列，各區塊間距 40px */
 .innerWrapper {
   display: flex;
   flex-direction: column;
@@ -10,32 +19,39 @@
   margin: 0 auto;
 }
 
+/* 經歷文章區塊 */
 .experienceArticle {
   max-width: 636px;
 }
 
+/* 經歷區塊內的段落文字 */
 .experienceArticle p {
   color: #000000;
   font-size: var(--m);
   line-height: 36px;
 }
 
+/* 經歷區塊內的年份標籤 */
 .experienceArticle span {
-  color: var(--secondary);
+  color: var(--secondary); /* 使用次色調 */
   font-size: var(--s);
-  font-style: italic;
+  font-style: italic; /* 斜體顯示 */
   line-height: 30px;
 }
 
-/* 工具樣式 */
+/* === 間距工具類別 === */
+
+/* 底部間距 8px */
 .mb8 {
   margin-bottom: 8px !important;
 }
 
+/* 底部間距 12px */
 .mb12 {
   margin-bottom: 12px !important;
 }
 
+/* 底部間距 16px */
 .mb16 {
   margin-bottom: 16px !important;
 }

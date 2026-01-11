@@ -1,6 +1,14 @@
+/**
+ * 帶裝飾線標題樣式 (Heading With Line Styles)
+ *
+ * 定義帶有底部紅色裝飾線的標題樣式，
+ * 用於區分履歷中的各個段落。
+ */
+
+/* 經歷標題 - 帶底部裝飾線 */
 .experienceHeading {
-  border-bottom: solid 3px var(--primary);
-  color: var(--primary);
+  border-bottom: solid 3px var(--primary); /* 主色調底線 */
+  color: var(--primary); /* 主色調文字 */
   font-size: var(--h2);
   line-height: 60px;
   margin-bottom: 16px;

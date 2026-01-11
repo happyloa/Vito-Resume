@@ -1,27 +1,37 @@
+/**
+ * 個人簡介區塊樣式 (Brief Introduction Styles)
+ *
+ * 定義個人簡介區塊的排版，使用灰色背景和右對齊設計。
+ */
+
+/* 區塊容器 - 灰色背景 */
 .container {
   background-color: var(--grey);
   padding: 48px 24px;
 }
 
+/* 內層包裝器 - 內容靠右對齊 */
 .innerWrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* 內容靠右 */
   max-width: 1272px;
   margin: 0 auto;
 }
 
+/* 簡介文字樣式 */
 .intro {
   width: 636px;
   color: #000000;
-  font-size: var(--l);
+  font-size: var(--l); /* 使用大型文字變數 */
   line-height: 48px;
 }
 
+/* === 響應式設計 - 手機尺寸 === */
 @media (max-width: 576px) {
   .intro {
     color: #000000;
-    font-size: var(--m);
-    text-align: center;
+    font-size: var(--m); /* 縮小為中型文字 */
+    text-align: center; /* 置中對齊 */
     line-height: 36px;
   }
 }

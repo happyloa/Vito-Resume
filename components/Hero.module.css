@@ -1,31 +1,44 @@
+/**
+ * Hero 區塊樣式 (Hero Section Styles)
+ *
+ * 定義首頁主視覺區塊的排版與響應式設計。
+ * 包含標題文字、個人照片的樣式設定。
+ */
+
+/* 區塊容器 */
 .container {
-  padding: 160px 24px 0;
+  padding: 160px 24px 0; /* 上內距 160px，左右 24px */
 }
 
+/* 內層包裝器 - 使用 Flexbox 垂直排列 */
 .innerWrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1272px;
-  margin: 0 auto;
+  max-width: 1272px; /* 最大寬度限制 */
+  margin: 0 auto; /* 水平置中 */
 }
 
+/* 個人頭像 */
 .avatar {
-  align-self: center;
+  align-self: center; /* 置中對齊 */
   max-width: 636px;
   width: 100%;
 }
 
+/* 主標題樣式 (VITO / RESUME) */
 .heading {
   color: #000000;
   font-size: 128px;
   line-height: 192px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.12em; /* 字距加寬 */
 }
 
+/* 右對齊修飾器 (用於 RESUME 標題) */
 .end {
   align-self: flex-end;
 }
 
+/* === 響應式設計 - 平板尺寸 === */
 @media (max-width: 992px) {
   .container {
     padding: 80px 24px 0;
@@ -37,6 +50,7 @@
   }
 }
 
+/* === 響應式設計 - 手機尺寸 === */
 @media (max-width: 576px) {
   .container {
     padding: 60px 24px 0;

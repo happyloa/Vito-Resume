@@ -1,8 +1,10 @@
+/* 引入 Google Fonts - Castoro 襯線字體 */
 @import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
 
+/* CSS Reset 與全域基礎設定 */
 * {
-  box-sizing: border-box;
-  font-family: "Castoro", serif;
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box; /* 使用 border-box 計算元素寬高 */
+  font-family: "Castoro", serif; /* 全站使用 Castoro 字型 */
+  padding: 0; /* 重設內距 */
+  margin: 0; /* 重設外距 */
 }
