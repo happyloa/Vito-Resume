@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "^25.0.6",
-    "@types/react": "^19.2.8",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
     "aos": "^2.3.4",
-    "next": "^16.1.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "next": "^16.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "typescript": "^5.9.3"
   }
 }
