@@ -12,14 +12,6 @@
 import styles from "./HeadingWithLine.module.css";
 
 /**
- * HeadingWithLine Props 型別定義
- */
-interface HeadingWithLineProps {
-    /** 標題文字內容，預設值為「請輸入標題」 */
-    Heading?: string;
-}
-
-/**
  * HeadingWithLine 元件
  *
  * 顯示帶有底部紅色裝飾線的 h3 標題。
@@ -31,6 +23,6 @@ interface HeadingWithLineProps {
  */
 export default function HeadingWithLine({
     Heading = "請輸入標題",
-}: HeadingWithLineProps) {
+}) {
     return <h3 className={styles.experienceHeading}>{Heading}</h3>;
 }

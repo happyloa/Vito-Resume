@@ -19,25 +19,14 @@ import Footer from "@/components/Footer";
 // 匯入 AOS 初始化元件
 import AosInitializer from "@/components/AosInitializer";
 
-// 匯入 React 型別定義
-import type { ReactNode } from "react";
-import type { Metadata } from "next";
-
 /**
  * 網站 metadata 設定
  * 用於 SEO 優化和瀏覽器標籤顯示
  */
-export const metadata: Metadata = {
+export const metadata = {
     title: "Vito Resume",
     description: "2023 切版夏季班 W1 - 個人履歷",
 };
-
-/**
- * RootLayout Props 型別定義
- */
-interface RootLayoutProps {
-    children: ReactNode;
-}
 
 /**
  * 根佈局元件
@@ -46,7 +35,7 @@ interface RootLayoutProps {
  * @param props.children - 子元件（各頁面內容）
  * @returns 包含完整 HTML 結構的根佈局
  */
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }) {
     return (
         <html lang="zh-Hant">
             <body>

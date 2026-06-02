@@ -22,7 +22,7 @@ import AOS from "aos";
  *
  * @returns null - 此元件不渲染任何內容
  */
-export default function AosInitializer(): null {
+export default function AosInitializer() {
     useEffect(() => {
         // 初始化 AOS 動畫庫
         AOS.init({

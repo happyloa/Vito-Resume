@@ -9,13 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "^25.5.0",
-    "@types/react": "^19.2.14",
     "aos": "^2.3.4",
     "next": "^16.2.7",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "typescript": "^5.9.3"
+    "react-dom": "^19.2.7"
   },
   "overrides": {
     "postcss": "^8.5.10"
