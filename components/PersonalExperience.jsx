@@ -1,36 +1,17 @@
 /**
  * 個人經歷區塊元件 (Personal Experience Section)
  *
- * 此元件顯示詳細的個人經歷資訊，分為四個區塊：
- * 1. 聯絡資訊：地址、電話、電子郵件、網站
- * 2. 學歷：教育背景與學位
- * 3. 工作經驗：歷任職位與公司
- * 4. 獲獎紀錄：各項榮譽與獎項
- *
- * 動畫效果：
- * - 每個區塊使用 fade-right 動畫（從左往右淡入）
+ * 顯示聯絡資訊、學歷、工作經歷與獲獎紀錄。
  */
 "use client";
 
-// 匯入元件樣式
 import styles from "./PersonalExperience.module.css";
-
-// 匯入帶有裝飾線的標題展示性元件
 import HeadingWithLine from "./ui/HeadingWithLine";
 
-/**
- * PersonalExperience 元件
- *
- * 呈現完整的個人履歷內容，包含聯絡方式、學歷、工作經驗與獲獎紀錄。
- * 每個區塊都配有 AOS 動畫效果，依序淡入呈現。
- *
- * @returns 個人經歷區塊的 JSX 結構
- */
 export default function PersonalExperience() {
     return (
         <section className={styles.container}>
             <div className={styles.innerWrapper}>
-                {/* 聯絡資訊區塊 */}
                 <article
                     className={styles.experienceArticle}
                     data-aos="fade-right"
@@ -44,7 +25,6 @@ export default function PersonalExperience() {
                     <p className={styles.mb8}>www.infohexschool.com</p>
                 </article>
 
-                {/* 學歷區塊 */}
                 <article
                     className={styles.experienceArticle}
                     data-aos="fade-right"
@@ -65,7 +45,6 @@ export default function PersonalExperience() {
                     <p>High School Diploma, Lincoln High School</p>
                 </article>
 
-                {/* 工作經驗區塊 */}
                 <article
                     className={styles.experienceArticle}
                     data-aos="fade-right"
@@ -81,7 +60,6 @@ export default function PersonalExperience() {
                     <p>Customer Service Representative, QRS Inc.</p>
                 </article>
 
-                {/* 獲獎紀錄區塊 */}
                 <article
                     className={styles.experienceArticle}
                     data-aos="fade-right"

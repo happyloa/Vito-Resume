@@ -10,7 +10,6 @@
 ## 使用技術
 
 - [Next.js 16](https://nextjs.org/)（React 框架）
-- [TypeScript](https://www.typescriptlang.org/)（型別安全的 JavaScript）
 - [React 19](https://react.dev/)
 - [AOS](https://github.com/michalsnik/aos)（捲動動畫效果）
 
@@ -19,7 +18,6 @@
 建議使用 [VSCode](https://code.visualstudio.com/) 搭配以下擴充套件：
 
 - [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) 或任何 TypeScript 支援套件
 
 ## 快速開始
 
@@ -63,8 +61,8 @@ app
 ├── favicon.ico                          網站圖示
 ├── globals.css                          全域樣式
 ├── variables.css                        CSS 變數定義
-├── layout.tsx                           網站整體架構（根佈局）
-└── page.tsx                             首頁（/）
+├── layout.jsx                           網站整體架構（根佈局）
+└── page.jsx                             首頁（/）
 ```
 
 ## 元件檔案（Components）
@@ -75,27 +73,26 @@ app
 
 ```
 components
-├── AosInitializer.tsx                   AOS 動畫初始化元件
-├── Hero.tsx                             主視覺區塊（個人照、標題）
+├── AosInitializer.jsx                   AOS 動畫初始化元件
+├── Hero.jsx                             主視覺區塊（個人照、標題）
 ├── Hero.module.css                      主視覺區塊樣式
-├── BriefIntroduction.tsx                個人簡介
+├── BriefIntroduction.jsx                個人簡介
 ├── BriefIntroduction.module.css         個人簡介樣式
-├── PersonalExperience.tsx               個人經歷（學歷、工作、獲獎）
+├── PersonalExperience.jsx               個人經歷（學歷、工作、獲獎）
 ├── PersonalExperience.module.css        個人經歷樣式
-├── Footer.tsx                           網站頁尾
+├── Footer.jsx                           網站頁尾
 ├── Footer.module.css                    網站頁尾樣式
 └── ui                                   UI 元件庫
-    ├── HeadingWithLine.tsx              帶裝飾線的標題元件
+    ├── HeadingWithLine.jsx              帶裝飾線的標題元件
     └── HeadingWithLine.module.css       帶裝飾線標題樣式
 ```
 
-## TypeScript 設定
+## JavaScript 設定
 
-專案使用 TypeScript 進行開發，相關設定檔：
+專案使用 JavaScript / JSX 進行開發，相關設定檔：
 
-- `tsconfig.json` - TypeScript 編譯設定
-- `global.d.ts` - 全域型別宣告（CSS Module、圖片檔案）
-- `next.config.ts` - Next.js 設定檔（TypeScript 版本）
+- `jsconfig.json` - 專案路徑別名設定 (Path Aliases `@/*` -> `./*`)
+- `next.config.mjs` - Next.js 設定檔
 
 ## 靜態檔案
 
@@ -114,12 +111,10 @@ public
 
 ## 程式碼規範
 
-- 所有程式碼皆使用 TypeScript 撰寫
+- 所有程式碼皆使用 JavaScript 與 JSX 撰寫
 - 遵循 ESLint 與 Next.js 官方程式碼規範
-- 所有元件與樣式檔案皆附有繁體中文註解
 
 ## 使用的套件 & 工具
 
 - [AOS](https://github.com/michalsnik/aos) 用於捲動動畫
 - [TinyPNG](https://tinypng.com/)
-- [Google Antigravity](https://antigravity.google/) Claude Opus 4.5 (Thinking)
